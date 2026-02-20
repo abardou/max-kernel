@@ -1,6 +1,6 @@
 # An Off-the-Shelf Kernel for Encoding Invariance in Bayesian Optimization
 
-![Level-sets of a two-dimensional radial invariant function.](./viz/Radial_Invariance.png) ![Resulting max kernel. The covariance structure properly encodes radial invariance.](./viz/Max_Kernel_Radial_Invariance.png)
+![Level-sets of a two-dimensional radial invariant function and resulting invariant kernel. The covariance structure properly encodes radial invariance.](./viz/MaxKernel_Inv.png)
 
 ## TL;DR
 
