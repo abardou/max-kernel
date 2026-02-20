@@ -5,14 +5,16 @@
 ## TL;DR
 
 This repository contains the implementation (based on [BoTorch](https://botorch.org) [1]) of a kernel that can be used off-the-shelf for the Bayesian Optimization (BO) of a black-box function $f : \mathcal{S} \subset \mathbb{R}^d \to \mathbb{R}$ that exhibits invariance under the action of a group $\mathcal{G}$, i.e., for any $\mathbf{x} \in \mathcal{S}$ and any $g \in \mathcal{G}$,
-\[
+
+$$
 f(\mathbf{x}) = f(g(\mathbf{x})).
-\]
+$$
 
 To encode this information into the surrogate Gaussian Process (GP), this implementation builds a covariance function $k_\mathcal{G}$ that is invariant under the group of symmetries $\mathcal{G}$, given a base kernel $k$, defined as
-\[
+
+$$
 k_\mathcal{G}(\mathbf{x}, \mathbf{x}') = \max_{g, g' \in \mathcal{G}} k(g(\mathbf{x}), g'(\mathbf{x}')).
-\]
+$$
 
 In practice, since $k_\mathcal{G}$ is not necessarily positive semi-definite (PSD), the implementation projects the covariance matrices built from $k_\mathcal{G}$ onto the cone of PSD matrices and uses a Nyström extension [2] to construct a PSD covariance function (and thus an interpretable surrogate GP).
 
