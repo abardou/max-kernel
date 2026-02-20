@@ -1,0 +1,6 @@
+numpy
+botorch
+torch
+gpytorch
+scipy
+itertools
