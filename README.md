@@ -32,11 +32,13 @@ For more details, please see [this ICLR'26 paper](https://openreview.net/forum?i
 If you use this code or if you'd like to reference this work, please cite [the following paper](https://openreview.net/forum?id=zUbBaWAM1Q) [3] with the following BibTeX entry:
 
 ```bibtex
-@article{bardou2025symmetry,
+@inproceedings{bardou2026symmetry,
   title={Symmetry-Aware Bayesian Optimization via Max Kernels},
   author={Bardou, Anthony and Gonon, Antoine and Ahadinia, Aryan and Thiran, Patrick},
-  journal={arXiv preprint arXiv:2509.25051},
-  year={2025}
+  booktitle={International Conference on Learning Representations},
+  volume={2026},
+  pages={127893--127923},
+  year={2026}
 }
 ```
 
